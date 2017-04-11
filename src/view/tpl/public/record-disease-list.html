@@ -1,0 +1,37 @@
+<input type="hidden" id="permission" name="permission" value="">
+<div class="c-margin-twentyfive">
+	<div class="con_left" style="overflow:auto;">
+		<div class="bclbmiddle">
+			<div class="bclm"><span class="f-sixteen tcolor bcltopic" v="319">查看病程录</span>
+				<input id="currrent" value="1" type="hidden"> 
+				<input id="apply" value="1269" type="hidden"> 
+				<input id="patientId" type="hidden" value="">
+				<span class="bclhfy" style="width: 46px;"><span id="lsz" style=" color:#bcbcc4;">&lt;</span><span>{{currentPage}}</span>/<span id="totalPage">{{pages}}</span><span style=" color:#3598d9; cursor:pointer;">&gt;</span></span>
+			</div>
+		</div>
+		<ul style="margin:0;" id="bclul">
+			{{each list}}
+			<li class="bclli color-grey {{$value.className}}" id="{{$value.id}}" style="margin-top: 10px;">
+				<div class="bcldiv">
+					<div><a href="javascript:;" class="f-sixteen">{{$value.title}}</a><span style="float:right">{{$value.num}}</span></div>
+					<div style="margin-top:10px;"><span>{{$value.doctor}}</span><span style="float:right;">{{$value.time}}</span></div>
+				</div>
+			</li>
+			{{/each}}
+		</ul>
+	</div>
+	<div class="bclimg"><img src="bclimg.jpg" width="26px"></div>
+	<div class="bclright" style="overflow-y:auto;">
+ 		<ul>
+ 			{{each msg}}
+			<li class="rightli" id="li{{$value.id}}" style="display: {{$value.zt}};">
+				<div><span class="ritopic">{{$value.title}}</span>(<span class="bclsdian">{{$value.num}}</span>)</div>
+				<textarea class="ricon">{{$value.msg}}</textarea>
+				<div style="text-align:right;font-size:14px;padding:2px 0;">{{$value.doctor}}</div>
+				<div style="text-align:right;color:gray;padding:2px 0;">{{$value.time}}</div>
+			</li>
+			{{/each}}
+		</ul>
+	</div>
+	<div style="clear:both;"></div>
+</div>

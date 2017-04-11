@@ -1,0 +1,473 @@
+.c-mtop-ten{
+    margin-top:10px;
+}
+.c-margin-right{
+    margin-right:25px;
+}
+.c-left-ten{
+    margin-left: 10px;
+}
+.c-top-twenty{
+    margin-top:20px;
+}
+.c-top-thirty{
+    margin-top:30px;
+}
+.c-ten-margin{
+    margin:10px 0;
+}
+.c-margin-zero{
+    margin:0!important;
+}
+.c-margin-twentyfive{
+    margin:25px;
+}
+.g-login-header{
+    height:80px;
+    width: @wid;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    background-color: @loginColor;
+    .transition;
+}
+.g-login-bodyall {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+    width: @wid;
+    z-index: 0;
+    .transition;
+}
+.g-login-bodynr_1 {
+  background: url(/gulptech/src/images/login/bodynr_1.jpg) no-repeat;
+  background-size: @wid;
+  background-position: center;
+}
+.g-login-bodynr_2{
+    background: @white;   
+}
+.g-login-bodynr_3{
+    background: @black;
+}
+.g-login-bodynr_4{
+    background: #f7f7f7;
+}
+.g-login-bodynr_5{
+    background: #288ac9;
+}
+.g-login-bodynr_6{
+    background: url(/gulptech/src/images/login/bodynr_6.jpg) no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.g-login-nrbox {
+    position: relative;
+    top: 80px;
+    width: @wid;
+    .g-login-nr{
+        height: @wid;
+        width: 1150px;
+        margin: 0px auto;
+        position: relative;
+    }
+}
+//登陆后首页
+.g-on-body{
+    width: @wid;
+    height: @wid;
+    -webkit-user-select: none;
+    overflow: hidden;
+    .back_back {
+      width: @wid;
+      height: auto;
+      min-height: 90px;
+      /* background: url(/gulptech/src/images/pageHeader/top-bac.png) repeat; */
+      background: url(/gulptech/src/images/pageHeader/topbg.png) repeat-x;
+      .top {
+          width: @wid;
+          height: auto;
+          min-height: 90px;
+          background: url(/gulptech/src/images/pageHeader/topbanner2.png) no-repeat right;
+        }
+    }
+}
+.g-on-top1 {
+  position: relative;
+  padding: 13px 17px;
+  /* overflow: hidden; */
+  font-size: 12px;
+  color: @white;
+  .top_linel {
+      float: left;
+      position: relative;
+      span {
+          cursor: pointer;
+        }
+    }
+}
+.g-on-top2{
+    position: relative;
+    overflow: hidden;
+    padding: 0 17px 0 250px;
+    height: auto;
+    min-height: 48px;
+    position: absolute\9;
+    top: 40px\9;
+    left: 0\9;
+    text-align: center;
+    .top2_left {
+      /* float: left; */
+      position: absolute;
+      left: 20px;
+      top: 4px;
+      u {
+          float: left;
+          width: 36px;
+          height: 35px;
+          background: url(/gulptech/src/images/pageHeader/zznewtop.png) no-repeat -80px -84px;
+        }
+      span {
+          float: left;
+          color: @white;
+          font-size: 18px;
+          margin: 7px 0 0 8px;
+        }
+    }
+    .top2_right {
+      width: 85%;
+      margin-left: 80px;
+      position: relative;
+    }
+}
+.g-on-cont {
+  position: absolute;
+  top: 92px;
+  bottom: 0;
+  width: @wid;
+  border: 0;
+}
+.g-menu-body{
+    background: @leftBgColor;
+    width: 200px;
+    height: 600px;
+    text-align: center;
+    font-size: 14px;
+    color: @white;
+}
+.g-leftfoot {
+  width: 144px;
+  color: @fontColor;
+  font-size: 12px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  div{
+      a {
+          display: block;
+          color: @fontColor;
+          font-size: 12px;
+        }
+  }
+}
+//填写转诊单
+.g-in-bodycon{
+    margin: 0 10px;
+    padding-top: 13px;
+}
+.g-sqd-margin{
+    margin: 13px auto 26px auto;
+}
+.g-sqd_con{
+    width: @wid;
+    height: auto;
+    border: 1px solid #dadde3;
+    border-radius: 3px;
+    background: @white;
+    text-align: center;
+    .div2 {
+      width: @wid;
+      height: 80px;
+      background: #f6f7fb;
+      line-height: 80px;
+      text-align: center;
+    }
+}
+.g-in-enter{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom:100px; 
+    display: inline-block;
+    text-align: left;
+}
+.g-in-sqdbg{
+  width: @wid;
+  background-color: @white;
+  height: auto;
+  border-bottom: 2px solid #dee2ee;
+    .sqdform {
+      width: @wid;
+      padding-top: 25px;
+      margin-left: auto;
+      margin-right: auto;
+        .xinxitb1 {
+          margin: 30px 25px;
+        }
+        tr {
+          height: 65px;
+        }
+        .xinxitb2 {
+          margin-top: 30px;
+          margin-right: 20px;
+          display: none;
+        }
+        .xinxitb3 {
+          display: none;
+          margin: 30px 10px;
+        }
+        .xinxitb4{
+          margin: 0 30px;
+          display: none;
+        }
+    }
+    
+}
+.c-xx-margin{
+    text-align: center; 
+    margin-top: 30px; 
+    margin-bottom: 35px;
+}
+.g-relative{
+    position: relative;
+    bottom:5px;
+}
+.c-roll-out{
+    margin-left: 25px; 
+    margin-top: 20px;
+    .wave{
+        margin:15px 0;
+    }
+}
+.c-blx{
+    width:90%!important;
+    margin-bottom:20px;
+}
+//向我申请or本人申请 列表页
+.g-my-bmiddle {
+  height: auto;
+  border: 1px solid #dae2f5;
+  border-left:4px solid @allColor;
+  margin-top: 20px;
+  margin-bottom: 24px;
+  .g-my-mwhite {
+      float: left;
+      background-color: @white;
+      height: auto;
+      width: @wid;
+      .c-my-mcenter {
+          margin-left: 16px;
+          margin-top: 13px;
+        }
+    }
+}
+.g-my-bfoot {
+  height: 646px;
+  border: 1px solid #dadde3;
+  border-radius: 2px;
+  background-color: @white;
+  margin-bottom: 40px;
+  clear: both;
+  .bsearch {
+      height: 42px;
+      line-height: 38px;
+      text-indent: 17px;
+      background-color: #f6f7fb;
+      border-bottom: 1px solid #dadde3;
+      .weishenpi {
+          display: inline-block;
+          float: right;
+          margin-right: 26px;
+        }
+    }
+}
+.g-foot-con{
+    margin: 10px 10px 20px 17px; 
+    height: 520px;
+}
+//本院转出or转入
+.g-zzd_con {
+  border: 1px solid #dae2f5;
+  height: auto;
+  width: @wid;
+  background-color: @white;
+  .g-zzd_head {
+      padding:20px 30px;
+      border-bottom: 1px solid #dadde3;
+      .zzdname {
+          font-size: 20px;
+          font-weight: 700;
+        }
+    }
+  
+}
+.g-head-list{
+    margin: 20px 0 10px 0; 
+    height: 30px;
+    clear: both;
+    .zzd_san {
+      height: 26px;
+      border: 3px solid #ededed;
+      background-color: #c5c5c5;
+      color: @white;
+      border-radius: 15px;
+      width: 125px;
+      text-align: center;
+      line-height: 26px;
+      float: left;
+      cursor: pointer;
+    }
+    .zzd_xuan {
+      background-color: @leftMenuColor;
+      border: 3px solid #d2e8bc;
+      cursor: pointer;
+    }
+    .time-list{
+        width: 15px;
+        height:15px;
+        background: url(/gulptech/src/images/page/time.png) no-repeat;
+        display: inline-block;
+        position: relative;
+        top: 3px;
+        left: 5px;
+    }
+    .zzd_huix {
+      float: left;
+      width: 32px;
+      height: 2px;
+      background: #c5c5c5;
+      position: relative;
+      top: 15px;
+      z-index: 10000;
+    }
+    .jcd_timebg {
+      width: 210px;
+      min-height: 84px;
+      font-size: 14px;
+      color: #ff9b57;
+      clear: both;
+      position: relative;
+      left: 120px;
+      top: 3px;
+      line-height: 20px;
+      z-index: 10000;
+      display: none;
+    }
+}
+.g-zzd_nav {
+  height: 46px;
+  background-color: #f6f7fb;
+  font-weight: 700;
+  padding-left: 10px;
+  .navspan {
+      height: 45px;
+      line-height: 45px;
+      font-size: 16px;
+      margin: 0 23px;
+      display: inline-block;
+      cursor: pointer;
+      position: relative;
+      color: #000;
+      top: -1px;
+    }
+    .navspan_click {
+      border-top: 2px solid #3598d9;
+      color: #3598d9;
+      top: -1px;
+    }
+}
+//转诊单
+.g-zzdCont{
+    margin: 25px 50px;
+    position:relative;
+}
+.g-zzdhoscon{
+    width: 90%;
+    margin: 20px auto;
+    .div {
+      float: left;
+      margin-right: 1%;
+      margin-bottom: 15px;
+      div {
+          line-height: 25px;
+          
+        }
+        span:first-child {
+          width: 85px;
+          text-align: right;
+          display: inline-block;
+          vertical-align: top;
+        }
+        span:last-child {
+          display: inline-block;
+          width: 150px;
+        }
+    }
+    .div2{
+        margin: 0!important;
+        min-width: 722px!important;
+        span:last-child {
+          display: inline-block;
+          width: 85%;
+        }
+    }
+    .div4 {
+      float: left;
+      margin-bottom: 20px;
+      div {
+          line-height: 25px;
+        }
+        span:first-child {
+          width: 70px;
+          text-align: right;
+          display: inline-block;
+          vertical-align: top;
+        }
+        span:last-child {
+          display: inline-block;
+          width: 80px;
+        }
+    }
+}
+//进度条
+.g-probar {
+  width: 452px;
+  height: 138px;
+  background-color: @white;
+  border-radius: 2px;
+  z-index: 10005;
+  position: fixed;
+  display: none;
+  .g-probar-con{
+      margin:34px 26px;
+      .leftdiv {
+          float: left;
+          text-align: center;
+          width: 85px;
+        }
+      .centerdh {
+          float: left;
+          width: 230px;
+          height: 70px;
+          text-align: center;
+          margin-top: 26px;
+          .bartext{
+              color:@allColor;
+              font-size:16px;
+              margin-top:10px;
+          }
+        }
+  }
+}

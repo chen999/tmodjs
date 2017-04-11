@@ -1,0 +1,24 @@
+<!-- 首页表格开始 -->
+{{each list}}
+	<div style="margin-left:20px;display:inline-block;margin-bottom: 10px;text-align: left;">
+		<div class="m-sy_zr">
+			<div class="m-bybg"><span class="byzhuanru">本月{{$value.title}}</span></div>
+			<div class="m-rollout">{{$value.title}}</div>
+		</div>
+		<!-- 基础版 -->
+		 <div class="m-benyue">
+			<div class="shenqing">本月共{{$value.way}}:<br><span class="sdcount" id="{{$value.id}}">{{$value.num}}</span>例申请</div>
+			<div class="zuojt"><img src="../images/leftMenu/sy_zuojt.jpg"></div>
+			<div style="width:300px;float:left;" class="{{$value.className}}">
+				<table width="100%">
+					<tbody><tr><th>{{$value.title1}}</th><th>{{$value.title2}}</th></tr>
+					{{each $value.list}}
+					<tr class="{{$value.className}}"><td>{{$value.title1}}：<span style="color:#ff7d0c" id="{{$value.id1}}">{{$value.num1}}</span></td><td>{{$value.title2}}：<span style="color:#ff7d0c" id="{{$value.id2}}">{{$value.num2}}</span></td></tr>
+					{{/each}}
+				</tbody></table>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+	</div>
+{{/each}}
+<!-- 首页表格结束 -->

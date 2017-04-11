@@ -1,0 +1,22 @@
+
+<!--侧边栏导航开始-->
+
+<div style="width:172px;margin-top:13px;margin-left:auto;margin-right:auto; " v="true" id="topic1">
+	<input type="hidden" id="permission" name="permission" value="">
+	<input type="hidden" onclick="clickCss(&#39;2&#39;)" id="2b"> 
+	<input type="hidden" onclick="clickCss(&#39;3&#39;)" id="3b">
+	<input type="hidden" id="url" value="http://zyylxz.zwjk.com/Home/Login">
+	<input type="hidden" id="other_applyId" name="other_applyId" value="null"> <input type="hidden" id="other_inout" name="other_inout" value="null">
+	<input type="button" id="readButton" style="display: none;" onclick="readApply()">
+	<ul>
+		{{each list}}
+	    	<li class="litopic" onmouseover="getTopic(this)" onmouseout="outTopic(this)" id="{{$value.num}}" onclick="gotoUrlNew(this,&#39;{{$value.url}}&#39;,&#39;content&#39;)">
+	    		<div class="topicbg topicimg{{$value.num}}"></div>
+	    		<span class="topic z{{$value.num}}">{{$value.title}}</span>
+	    	</li>
+	    {{/each}}
+	</ul>
+</div>
+
+<!--侧边栏导航结束-->
+

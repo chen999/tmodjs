@@ -1,0 +1,45 @@
+<fieldset class="y-fieldset">
+	<legend><span class="leaf"></span>&nbsp;转诊信息</legend>
+	<div class="pale-green-bg clearfloat"><div class="little-title">[转出相关信息]</div>
+	<table class="zzd_tb1" cellspacing="0" cellpadding="0">
+		<tbody>
+			{{each list4}}
+				<tr v="319" c="2"><td>转出医院：</td><td>{{$value.item1}}</td></tr>
+				<tr><td>申请转入医院：</td><td>{{$value.item2}}</td></tr>
+				<tr><td>经治医生：</td><td>{{$value.item3}}</td></tr>
+				<tr><td>转运工具：</td><td>{{$value.item4}}</td></tr>
+			{{/each}}
+		</tbody>
+	</table>
+	<table class="zzd_tb1" cellspacing="0" cellpadding="0">
+		<tbody>
+			{{each list5}}
+				<tr><td>转出科室：</td><td>{{$value.item1}}</td></tr>
+				<tr><td>申请转入科室：</td><td>{{$value.item2}}</td></tr>
+				<tr><td>经治医生电话：</td><td>{{$value.item3}}</td></tr>
+			{{/each}}
+		</tbody>
+	</table>
+	<div class="blx" style="width:90%;margin-bottom:20px;"></div>
+	<div class="little-title">[申请入院信息]</div>
+	<table class="zzd_tb1" cellspacing="0" cellpadding="0">
+		<tbody>
+			{{each list6}}
+				<tr><td>紧急程度：</td><td>{{$value.item1}}</td></tr>
+				<tr><td>床位类型：</td><td>{{$value.item2}}</td></tr>
+				<tr><td>申请入住时间：</td><td>{{$value.item3}}</td></tr>
+				<tr><td>医疗组：</td><td>{{$value.item4}}</td></tr>
+			{{/each}}
+		</tbody>
+	</table>
+	<table class="zzd_tb1" cellspacing="0" cellpadding="0">
+		<tbody>
+			{{each list7}}
+				<tr><td>入院类别：</td><td>{{$value.item1}}</td></tr>
+			<tr><td>病情要求：</td><td>{{$value.item2}}</tr>
+			<tr><td>预计住院：</td><td>{{$value.item3}}</td></tr>
+			<tr><td>申请转诊时间：</td><td>{{$value.item4}}</td></tr>
+			{{/each}}
+		</tbody>
+	</table>
+</fieldset>

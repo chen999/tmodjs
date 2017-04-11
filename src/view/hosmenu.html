@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>
+双向转诊医疗平台
+</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../../lib/boot/bootstrap-ie6.min.css">
+<link rel="stylesheet/less" href="../less/style.less" />
+<script src="../../lib/less.min.js"></script>
+<script src="../../lib/jquery-1.11.1.min.js"></script>
+
+<script type="text/javascript" src="../js/hos-menu.js"></script>
+<script type="text/javascript" src="../js/hosmenu.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script src="../../lib/permission.js"></script>
+
+</head>
+<body class="g-menu-body" id="a">
+	
+	<script src="tpl/build/template.js"></script>
+	<script>
+		var data = {
+			list: [
+				{
+					title: '填写转诊单',
+					num: '3',
+					url: '/apply/index.htm'
+				},
+				{
+					title: '转入本院',
+					num: '1',
+					url: '/outrefferal/search.htm'
+				},
+				{
+					title: '本院转出(1)',
+					num: '2',
+					url: '/inrefferal/search.htm'
+				},
+				{
+					title: '数据中心',
+					num: '4',
+					url: '/data/data2.htm?typeList=List1'
+				}
+			]
+		};
+		document.getElementById('a').innerHTML = template('hosmenu',data);
+	</script>
+</body>
+</html>

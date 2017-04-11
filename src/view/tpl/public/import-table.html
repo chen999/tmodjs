@@ -1,0 +1,34 @@
+{{each list2}}
+
+<div class="m-sqd_cxlr {{$value.className}}" id="{{$value.id}}">
+	<div class="m-sqd_lt"></div>
+	<div class="m-sqd-con">
+		<div class="first-div clearfloat">
+			<div class="left-width"></div>
+			<div class="right-width">
+				<div class="cxlr-title">{{$value.title}}</div>
+				<div class="cxlr_con cxlr_con1">
+				{{$value.msg}}
+				</div>
+			</div>
+		</div>
+		<div class="second-div">
+			<table cellpadding="0" cellspacing="0">
+				<tbody>
+					{{each $value.list3}}
+					<tr class="cxlrtr">
+					<td><div class="sqdxinxi"></div><div>{{$value.title}}</div></td>
+					<td><span>{{$value.way}}</span></td>
+				</tr>
+				{{/each}}
+			</tbody></table>
+		</div>
+	</div>
+	<div class="m-cxlr_foot">
+		<div class="chosejixu" id="cxxz">
+			选择并继续<span class="gtright">&nbsp;&gt;</span>
+		</div>
+	</div>
+</div>
+
+{{/each}}

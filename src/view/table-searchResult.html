@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>
+双向转诊医疗平台
+</title>
+<link href="../../lib/boot/bootstrap.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="../../lib/boot/bootstrap-ie6.min.css">
+<link rel="stylesheet" type="text/css" href="../../lib/ie.css">
+<!--LESS-->
+<link rel="stylesheet/less" type="text/css" href="../less/style.less" />
+<script src="../../lib/less.min.js"></script>
+<script src="../../lib/boot/bootstrap.min.js"></script>
+<script src="../../lib/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+	<div class="g-my-bfoot clearfloat" id="a">
+		
+	</div>
+	<script src="tpl/build/template.js"></script>
+<script>
+var data = {
+	resultNum1: "40",
+	resultNum2: "5",
+	title: [
+		{
+			title1: "序号",
+			title2: "会诊编号",
+			title3: "患者",
+			title4: "病理号",
+			title5: "部位",
+			title6: "类型",
+			title7: "会诊专家",
+			title8: "专家电话",
+			title9: "申请时间",
+			title10: "进度",
+			title11: "操作操作"
+		}
+	],
+	list: [
+		{
+			item1: "121312",
+			item2: "1321323",
+			item3: "121312",
+			item4: "1321323",
+			item5: "121312",
+			item6: "1321323",
+			item7: "121312",
+			item8: "1321323",
+			item9: "121312",
+			item10: "1321323"
+			
+		},
+		{
+			item1: "121312",
+			item2: "1321323",
+			item3: "121312",
+			item4: "1321323",
+			item5: "121312",
+			item6: "1321323",
+			item7: "121312",
+			item8: "1321323",
+			item9: "121312",
+			item10: "1321323"
+			
+		},
+		{
+			item1: "121312",
+			item2: "1321323",
+			item3: "121312",
+			item4: "1321323",
+			item5: "121312",
+			item6: "1321323",
+			item7: "121312",
+			item8: "1321323",
+			item9: "121312",
+			item10: "1321323"
+			
+		}
+	],
+	listPage: [
+		{
+			className:'licount_a_hover',
+			num:'01'
+		},
+		{
+			className:'',
+			num:'02'
+		},
+		{
+			className:'',
+			num:'03'
+		}
+	]
+};
+document.getElementById('a').innerHTML = template('table-searchResult',data);
+</script>
+</body>
+</html>

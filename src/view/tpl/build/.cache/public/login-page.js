@@ -1,0 +1,2 @@
+/*TMODJS:{"version":2,"md5":"acad9d4ea98f37c2f9996eb7b62b0212"}*/
+template('public/login-page','<div id="pagenum" class="pagenum"> <div id="num_1" class="on"></div> <div id="num_2" class=""></div> <div id="num_3" class=""></div> <div id="num_4"></div> <div id="num_5"></div> <div id="num_6"></div> </div> <input type="hidden" value="1" id="page">');

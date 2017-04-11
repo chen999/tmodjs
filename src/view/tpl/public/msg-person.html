@@ -1,0 +1,26 @@
+<fieldset class="y-fieldset">
+	<legend><span class="leaf"></span>&nbsp;基本信息</legend>
+	<div class="align-center clearfloat">
+	<table class="zzd_tb1" cellspacing="0" cellpadding="0">
+		<tbody>
+			{{each list1}}
+				<tr><td>姓名：</td><td>{{$value.name}}</td></tr>
+				<tr><td>年龄：</td><td>{{$value.age}}</td></tr>
+				<tr><td>身份证号：</td><td>{{$value.num}}</td></tr>
+				<tr><td>家属联系电话：</td><td>{{$value.phoneFamily}}</td></tr>
+				<tr><td>家庭地址：</td><td>{{$value.address}}</td></tr>
+			{{/each}}
+		</tbody>
+	</table>
+	<table class="zzd_tb1" cellspacing="0" cellpadding="0">
+		<tbody>
+			{{each list2}}
+				<tr><td>性别：</td><td>{{$value.sex}}</td></tr>
+				<tr v="2"><td>出生年月：</td><td>{{$value.birth}}</td></tr>
+				<tr><td>本院病历号：</td><td>{{$value.num}}</td></tr>
+				<tr><td>联系电话：</td><td>{{$value.phoneSelf}}</td></tr>
+				<tr><td></td><td></td></tr>
+			{{/each}}
+	</tbody></table>
+	</div>
+</fieldset>

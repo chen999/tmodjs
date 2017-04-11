@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>
+双向转诊医疗平台
+</title>
+<link href="../../lib/boot/bootstrap.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="../../lib/boot/bootstrap-ie6.min.css">
+<link rel="stylesheet" type="text/css" href="../../lib/ie.css">
+<!--LESS-->
+<link rel="stylesheet/less" type="text/css" href="../less/style.less" />
+<script src="../../lib/less.min.js"></script>
+<script src="../../lib/boot/bootstrap.min.js"></script>
+<script src="../../lib/jquery-1.11.1.min.js"></script>
+
+</head>
+<body id="a">
+	
+	<script src="tpl/build/template.js"></script>
+	<script>
+		var data = {
+			name: "邵医生",
+			list:[
+				{
+					className:'aaa',
+					id:'inAll',
+					title:'转入',
+					way:'收',
+					num: "0",
+					title1: "医务科",
+					title2: "住院部",
+					list: [
+						{
+							className:'trbg',
+							title1: '同意',
+							id1:'agreeIn',
+							num1: '0',
+							title2: '待床中',
+							id2:'',
+							num2: '0'
+						},
+						{
+							className:'',
+							title1: '拒绝',
+							id1:'refuseIn',
+							num1: '0',
+							title2: '预收住',
+							id2:'',
+							num2: '0'
+						},
+						{
+							className:'trbg',
+							title1: '未处理',
+							id1:'notIn',
+							num1: '0',
+							title2: '办理入院',
+							id2:'',
+							num2: '0'
+						}
+					]
+				},
+				{
+					className:'',
+					id:'outAll',
+					title:'转出',
+					way:'发起',
+					num: "5",
+					title1: "省级医务科",
+					title2: "省级住院部",
+					list: [
+						{
+							className:'trbg',
+							title1: '同意',
+							id1:'outagreeInall',
+							num1: '0',
+							title2: '待床中',
+							id2:'agreeOut',
+							num2: '0'
+						},
+						{
+							className:'',
+							title1: '拒绝',
+							id1:'refuseOut',
+							num1: '0',
+							title2: '预收住',
+							id2:'outstatus4',
+							num2: '0'
+						},
+						{
+							className:'trbg',
+							title1: '未处理',
+							id1:'notOut',
+							num1: '0',
+							title2: '办理入院',
+							id2:'outstatus5',
+							num2: '0'
+						},
+						{
+							className:'',
+							title1: '已出院',
+							id1:'',
+							num1: '0',
+							title2: '取消入院',
+							id2:'outstatus6',
+							num2: '0'
+						}
+					]
+				}
+			],
+			
+			
+		};
+		document.getElementById('a').innerHTML = template('firstPage',data);
+	</script>
+</body>
+</html>

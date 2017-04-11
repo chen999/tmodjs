@@ -1,0 +1,29 @@
+$(document).ready(function(){
+	var height=$(window.parent.parent).height();
+	var h = $(window.parent.document).height()
+	$(".databg",window.parent.document).css("height",height);
+	$("#xiazai").click(function(){
+		$(window.parent.parent.document).find("#ifr1").contents().find("#screen").css("height",height);
+		$("#screen1",window.parent.document).addClass("screen").css("height",h);
+		$(window.parent.parent.document).find("#ifr1").contents().find("#screen").addClass("screen");
+		$("#zzdload",window.parent.document).css("right","0");
+		$("body",window.parent.document).css("overflow","hidden");
+	})
+	$(".close,#screen1",window.parent.document).click(function(){
+		$(".databg",window.parent.document).css("right","-100%");
+		$("body",window.parent.document).css("overflow","auto");
+		$(window.parent.parent.document).find("#ifr1").contents().find("#screen").css("height","0");
+		$("#screen1",window.parent.document).removeClass("screen").css("height","0");
+		$(window.parent.parent.document).find("#ifr1").contents().find("#screen").removeClass("screen");
+	})
+	$(window.parent.parent.document).find("#ifr1").contents().find("#screen").click(function(){
+		$(".databg",window.parent.document).css("right","-100%");
+		$("body",window.parent.document).css("overflow","auto");
+		$(window.parent.parent.document).find("#ifr1").contents().find("#screen").css("height","0");
+		$("#screen1",window.parent.document).removeClass("screen").css("height","0");
+		$(window.parent.parent.document).find("#ifr1").contents().find("#screen").removeClass("screen");
+		$("#datafix",window.parent.document).hide();
+		$("#datafix",window.parent.document).removeClass("datafix");
+		$("#zzdtp1",window.parent.document).css("margin-top","30px");
+	})
+})

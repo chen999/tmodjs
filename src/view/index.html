@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+		双向转诊医疗平台
+		</title>
+		<link href="../../lib/boot/bootstrap.css" rel="stylesheet">
+		
+		<link rel="stylesheet" type="text/css" href="../../lib/boot/bootstrap-ie6.min.css">
+		<link rel="stylesheet" type="text/css" href="../../lib/ie.css">
+		<!--LESS-->
+		<link rel="stylesheet/less" type="text/css" href="../less/style.less" />
+		<script src="../../lib/less.min.js"></script>
+		<script src="../../lib/boot/bootstrap.min.js"></script>
+		<script src="../../lib/jquery-1.11.1.min.js"></script>
+	</head>
+	<body id="a">
+		
+		<script src="tpl/build/template.js"></script>
+		<script>
+			var data = {
+				list1: [
+					{
+						className:'div3_xuan',
+						id:'1',
+						msg:'1.&nbsp;选择类型'
+					},
+					{
+						className:'',
+						id:'2',
+						msg:'2.&nbsp;选择类型'
+					},
+					{
+						className:'',
+						id:'3',
+						msg:'3.&nbsp;选择类型'
+					},
+					{
+						className:'',
+						id:'4',
+						msg:'4.&nbsp;选择类型'
+					},
+					{
+						className:'',
+						id:'5',
+						msg:'5.&nbsp;选择类型'
+					}
+				],
+				list2: [
+					{
+						className:'m-sqd-left',
+						id:'autoDiv',
+						title:'查询录入',
+						msg:'通过患者在院唯一标识符（身份证号等）查询本院患者，患者基本信息自动录入',
+						list3: [
+							{
+								title:'患者基本信息',
+								way:'自动录入'
+							},
+							{
+								title:'患者病情信息',
+								way:'半自动录入'
+							},
+							{
+								title:'转诊信息',
+								way:'手动录入'
+							}
+						]
+					},
+					{
+						className:'m-sqd-right',
+						id:'manualDiv',
+						title:'手动录入',
+						msg:'通过患者在院唯一标识符（身份证号等）查询本院患者，患者基本信息自动录入',
+						list3: [
+							{
+								title:'患者基本信息',
+								way:'手动录入'
+							},
+							{
+								title:'患者病情信息',
+								way:'手动录入'
+							},
+							{
+								title:'转诊信息',
+								way:'手动录入'
+							}
+						]
+					}
+				]
+			};
+			document.getElementById('a').innerHTML = template('index',data);
+		</script>
+	</body>
+</html>

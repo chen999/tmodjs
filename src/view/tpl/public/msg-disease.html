@@ -1,0 +1,23 @@
+<fieldset class="y-fieldset">
+	<legend><span class="leaf"></span>&nbsp;病情信息</legend>
+	<div class="text-center clearfloat">
+		<table cellspacing="0" cellpadding="0" class="zzd_tb">
+			<tbody>
+				{{each list3}}
+					<tr><td style="width:157px;">主诉：</td><td>{{$value.item1}}</td></tr>
+					<tr><td>生命体征：</td><td>{{$value.item2}}</td></tr>
+					<tr><td>主要诊断：</td><td>{{$value.item3}}</td></tr>
+					<tr><td>病情简介：</td><td>{{$value.item4}}</td></tr>
+					<tr><td>转出理由：</td><td>{{$value.item5}}</td></tr>
+					<tr><td>危重程度：</td><td>{{$value.item6}}</td></tr>
+					<tr>
+						<td>隔离要求：</td>
+						<td>{{$value.item7}}</td>
+					</tr>
+					<tr><td>转运评估：</td><td id="trAssessment">{{$value.item8}}</td></tr>
+					<tr><td>其他要求：</td><td>{{$value.item9}}</td></tr>
+				{{/each}}
+			</tbody>
+		</table>
+	</div>
+</fieldset>

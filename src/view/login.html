@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>
+双向转诊医疗平台
+</title>
+<link href="../../lib/boot/bootstrap.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="../../lib/boot/bootstrap-ie6.min.css">
+<link rel="stylesheet" type="text/css" href="../../lib/ie.css">
+<!--LESS-->
+<link rel="stylesheet/less" type="text/css" href="../less/style.less" />
+<script src="../../lib/less.min.js"></script>
+<script src="../../lib/jquery-1.11.1.min.js"></script>
+<script src="../../lib/boot/bootstrap.min.js"></script>
+<link href="../../lib/animation.css" rel="stylesheet">
+<link rel="stylesheet" href="../../lib/swiper/swiper.min.css">
+<script src="../../lib/swiper/swiper.min.js"></script>
+<script src="../../lib/jquery.mousewheel.min.js"></script>
+<script src="../js/zdxz.js"></script>
+</head>
+<body id="a">
+	<script src="tpl/build/template.js"></script>
+<script>
+var data = {
+	list1: [
+		{
+			title: '双向转诊',
+			id: '2'
+		},
+		{
+			title: '远程病理',
+			id: '3'
+		},
+		{
+			title: '远程会诊',
+			id: '4'
+		},
+		{
+			title: '远程像',
+			id: '5'
+		}
+	]
+};
+document.getElementById('a').innerHTML = template('login',data);
+</script>
+</body>
+</html>

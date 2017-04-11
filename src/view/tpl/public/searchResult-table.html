@@ -1,0 +1,47 @@
+<div class="g-foot-con">
+	<table width="100%" cellspacing="0" cellpadding="0">
+		<tbody><tr class="bftr1">
+			{{each title}}
+			<th>{{$value.title1}}</th>
+			<th>{{$value.title2}}</th>
+			<th>{{$value.title3}}</th>
+			<th>{{$value.title4}}</th>
+			<th>{{$value.title5}}</th>
+			<th>{{$value.title6}}</th>
+			<th>{{$value.title7}}</th>
+			<th>{{$value.title8}}</th>
+			<th>{{$value.title9}}</th>
+			<th>{{$value.title10}}</th>
+			<th class="opera-width">{{$value.title11}}</th>
+			{{/each}}
+		</tr>
+		</tbody><tbody id="btable">
+			{{each list}}
+			<tr class="bftr2 color-grey">
+				<td>{{$value.item1}}</td>
+				<td>{{$value.item2}}</td>
+				<td>{{$value.item3}}</td>
+				<td>{{$value.item4}}</td>
+				<td>{{$value.item5}}</td>
+				<td><span class="green">{{$value.item6}}</span></td>
+				<td>{{$value.item7}} </td>
+				<td>{{$value.item8}}</td>
+				<td>{{$value.item9}}</td>
+				<td class="relative"><span class="circle cir_gray"></span> {{$value.item10}} 	</td>																
+				<td>
+					<ul>
+						<li class="caozuoli">
+							<a name="1" href="" id="act1"><div class="caozuo" title="查看"><img src="../images/page/caozuoimg07.png"></div></a>
+						</li>
+						<li class="caozuoli">
+							<div class="caozuo" title="删除" style="cursor:pointer;">
+								<img src="../images/page/caozuoimg08.png" onclick="deleteCase(&#39;1683&#39;)">
+							</div>
+						</li>
+					</ul>
+				</td>
+			</tr>
+			{{/each}}				 							
+		</tbody>
+	</table>
+</div>

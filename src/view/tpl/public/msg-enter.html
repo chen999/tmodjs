@@ -1,0 +1,20 @@
+<fieldset class="y-fieldset">
+	<legend><span class="leaf"></span>&nbsp;入院追踪信息</legend>
+	<div class="text-center">
+		<table class="zzd_tb1" cellspacing="0" cellpadding="0">
+			<tbody>
+				{{each list8}}
+					<tr><td>实际转入科室：</td><td>{{$value.item1}}</td></tr>
+					<tr><td>病房：</td><td>{{$value.item2}}</td></tr>
+				{{/each}}
+			</tbody>
+		</table>
+		<table class="zzd_tb1" cellspacing="0" cellpadding="0">
+			<tbody>
+				{{each list9}}
+					<tr><td>当地病历号：</td><td>{{$value.item1}}</td></tr>
+				{{/each}}
+			</tbody>
+		</table>
+	</div>
+</fieldset>

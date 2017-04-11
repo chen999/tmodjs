@@ -1,0 +1,27 @@
+<div id="header" class="g-login-header">
+	<div class="m-login-headmulu">	
+		<img src="../images/login/toplogo.png">
+		{{each list1}}
+		<div id="top_{{$value.id}}" class="m-login-headlist">{{$value.title}}</div>
+		{{/each}}
+	</div>
+	<div class="m-login-headabs" id="headabs_forHover">
+        <div class="m-login-headabs_div" id="hoverDiv">
+          <div id="top_6" class="m-login-headabs_div">申请加入</div>
+          <div class="applyAddBox" id="applyAddBox" style="display: none;">
+            <div class="applyAddBox_L">
+            <p>双向转诊</p>
+            <a href="http://yyzz.ylxz.zwjk.com/lowerHospital/apply.htm" target="_blank"><p class="applyAdd_active">立即申请</p></a>
+            <a href="http://yyzz.ylxz.zwjk.com/lowerHospital/verification.htm" target="_blank"><p class="applyAdd_underline">合作协议下载</p></a>
+            </div>
+            <div class="applyAddBox_R">
+            <p class="applyAdd_gray">其他远程模块</p>
+            <p><span class="phoneImg"><span>申请电话</span></span></p>
+            <p>400-848-1766</p>
+            </div>
+           </div>
+        </div>
+		
+	    <div class="m-login-headabs_div" id="top_1"><a style="text-decoration: none; color: inherit;" href="http://ylxz.zwjk.com/Home/Help" target="_blank">帮助中心</a></div>
+	</div>
+</div>

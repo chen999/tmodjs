@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>
+双向转诊医疗平台
+</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../../lib/boot/bootstrap-ie6.min.css">
+<link rel="stylesheet/less" href="../less/style.less" />
+<script src="../../lib/less.min.js"></script>
+<script src="../../lib/jquery-1.11.1.min.js"></script>
+
+<script type="text/javascript" src="../js/hos-menu.js"></script>
+<script type="text/javascript" src="../js/hosmenu.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script src="../../lib/permission.js"></script>
+
+</head>
+<body>
+	<div class="g-zzdCont clearfloat" id="fsddd">
+		
+	</div>
+	<script src="tpl/build/template.js"></script>
+<script>
+var data = {
+	list1: [
+		{
+			name: 'ccc',
+			age: "64",
+			num: '322121',
+			phoneFamily: '54545145212100',
+			address: "杭州市"
+		}
+	],
+	list2: [
+		{
+			sex: 'ccc',
+			birth: "64",
+			num: '322121',
+			phoneSelf: '54545145212100'
+		}
+	],
+	list3: [
+		{
+			item1: "121312",
+			item2: "1321323",
+			item3: "121312",
+			item4: "1321323",
+			item5: "121312",
+			item6: "1321323",
+			item7: "121312",
+			item8: "1321323",
+			item9: ""
+		}
+	],
+	list4: [
+		{
+			item1: "121312",
+			item2: "1321323",
+			item3: "121312",
+			item4: "1321323"
+		}
+	],
+	list5: [
+		{
+			item1: "121312",
+			item2: "1321323",
+			item3: "121312"
+		}
+	],
+	list6: [
+		{
+			item1: "121312",
+			item2: "1321323",
+			item3: "121312",
+			item4: "1321323"
+		}
+	],
+	list7: [
+		{
+			item1: "121312",
+			item2: "1321323",
+			item3: "121312",
+			item4: "1321323"
+		}
+	],
+	list8: [
+		{
+			
+		}
+	],
+	list9: [
+		{
+			
+		}
+	]
+	
+	
+};
+document.getElementById('fsddd').innerHTML = template('msg',data);
+</script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+/*TMODJS:{"version":1,"md5":"f53169073754a9fd8b1a7170dc41d000"}*/
+template('public/login-3','<div class="g-login-nr"> <img class="m-page_top" src="../images/login/page3_top.png"> <iframe style="position: absolute;left: 10%;top: 170px;border: none;" width="80%" height="65%" src="http://service.slide.zwjk.com/viewer2/HTML5/SeadragonViewer.aspx?kfbpath=BfJDU1O/0pXL5OR8oDZk1UxPsyualAwdmLisBaqQq77PR8JjH9SmYQ==&SwitchShowAnno=1&SwitchAnno=1&SwitchLabel=1"></iframe> </div>');
